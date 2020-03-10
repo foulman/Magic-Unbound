@@ -1,0 +1,38 @@
+[
+  {
+    "type": "profession",
+    "ident": "mage",
+    "name": "Novice Hermetic Mage",
+    "description": "You have learned the basics of hermetic magic, you can cast the standard training spells and possess one book of additional magics that you can study.  Do not put any points into spellcraft!",
+    "points": 1,
+    "traits": [ "MAGE", "MAGE_NOVICE" ],
+    "skills": [ { "level": 1, "name": "spellcraft" } ],
+	"spells": [ { "id": "cantrip", "level": 1 }, { "id": "magic_missile_i", "level": 1 } ],
+    "items": {
+      "both": {
+        "items": [ "jeans", "tshirt", "hoodie", "socks", "pockknife", "mbag", "sneakers", "wristwatch", "mage_marker" ],
+        "entries": [ { "group": "charged_cell_phone" } ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "ident": "voidwalker",
+    "name": "Novice Void Walker",
+    "description": "You have learned the basics of hermetic magic, you can cast the standard training spells and possess one book of additional magics that you can study.  Do not put any points into spellcraft!",
+    "points": 1,
+    "traits": [ "VOID", "VOIDW_NOVICE" ],
+    "skills": [ { "level": 1, "name": "spellcraft" } ],
+	"spells": [ { "id": "voidw_emission", "level": 1 } ],
+    "items": {
+      "both": {
+        "items": [ "jeans", "tshirt", "hoodie", "socks", "pockknife", "mbag", "sneakers", "wristwatch", "mage_marker" ],
+        "entries": [ { "group": "charged_cell_phone" } ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  }
+]

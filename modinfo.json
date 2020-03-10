@@ -1,0 +1,26 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "magic-evolved",
+    "name": "Magic Evolved",
+    "authors": [ "Aptronym and ChaosVolt if he gets his shit together" ],
+    "maintainers": [ "Aptronym" ],
+    "description": "Magic Evolved adds diverse magical classes, types, items, and abilities of all kinds.",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  },
+  {
+    "type": "skill",
+    "ident": "spellcraft",
+    "name": "spellcraft",
+    "display_category": "display_ranged",
+    "description": "Your skill with magical abilities."
+  },
+  {
+    "type": "skill_boost",
+    "stat": "int",
+    "skills": [ "spellcraft" ],
+    "skill_offset": -3,
+    "scaling_power": 0.4
+  }
+]

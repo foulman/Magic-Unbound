@@ -1,0 +1,47 @@
+[
+  {
+    "type": "mutation",
+    "id": "MAGE",
+    "name": "Mage",
+    "points": 0,
+    "description": "You have learned how to access mana and cast at least one hermetic magic spell.  You're a mage, Gary!",
+    "starting_trait": false,
+    "purifiable": false,
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "MAGE_NOVICE",
+    "name": "Novice Mage",
+    "points": 1,
+    "description": "A Magic High School graduate.  You can cast a few spells and know how to handle your mana.",
+    "starting_trait": false,
+    "purifiable": false,
+    "valid": false,
+    "mana_regen_multiplier": 1.1,
+	"mana_multiplier": 1.10
+  },
+  {
+    "type": "mutation",
+    "id": "VOID",
+    "name": "Void Touched",
+    "points": 0,
+    "description": "You have learned how to access mana and cast at least one hermetic magic spell.  You're a mage, Gary!",
+    "starting_trait": false,
+    "purifiable": false,
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "VOIDW_NOVICE",
+    "name": "Novice Voidwalker",
+    "points": 1,
+    "description": "A Magic High School graduate.  You can cast a few spells and know how to handle your mana.",
+    "starting_trait": false,
+    "purifiable": false,
+    "valid": false,
+	"spells_learned": [ [ "voidw_emission", 1 ], [ "voidw_bolt", 1 ], [ "voidw_spray", 1 ] ],
+    "mana_regen_multiplier": 1.1,
+	"mana_multiplier": 1.10
+  }
+]
