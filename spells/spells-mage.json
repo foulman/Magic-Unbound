@@ -1,6 +1,6 @@
 [
   {
-    "id": "cantrip",
+    "id": "mu_spell_cantrip",
     "type": "SPELL",
     "name": "Cantrip",
     "description": "This is the first spell any mage learns, designed to teach them to manipulate mana to accomplish many minor tasks with a minimum of effort.  Eventually this becomes reflexive and you can simply do things at will with no spell casting required, just using background mana.",
@@ -47,7 +47,7 @@
     "flags": [ "PERSONAL", "TRADER_AVOID", "NO_SALVAGE", "PSEUDO", "WRITE_MESSAGE", "FIRESTARTER" ]
   },
   {
-    "id": "magic_missile_1",
+    "id": "mu_spell_magic_missile_1",
 	"type": "SPELL",
 	"name": "magic missile",
 	"description": "This spell hurls invisible bolts of force at your target.",
@@ -74,14 +74,14 @@
 	"range_increment": 1
   },
   {
-    "id": "magic_missile_2",
+    "id": "mu_spell_magic_missile_2",
 	"type": "SPELL",
 	"name": "magic missile spray",
 	"description": "This spell hurls invisible bolts of force at your target.",
 	"message": "you cast %s, sending slender invisible bolts of force puncturing into your enemy!",
 	"valid_targets": [ "hostile", "ground" ],
 	"effect": "cone_attack",
-	"extra_effects": [ { "id": "magic_missile_sub" } ],
+	"extra_effects": [ { "id": "mu_spell_magic_missile_sub" } ],
 	"flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "WONDER", "NO_FAIL" ],
 	"spell_class": "MAGE",
 	"energy_source": "MANA",
@@ -103,7 +103,7 @@
 	"max_aoe": 45
   },
   {
-    "id": "magic_missile_sub",
+    "id": "mu_spell_magic_missile_sub",
 	"type": "SPELL",
 	"name": "magic missile subspell",
 	"description": "This is a subspell of magic missile that does the damage",
@@ -121,7 +121,7 @@
     "max_field_intensity": 1
   },
   {
-    "id": "flamespray",
+    "id": "mu_spell_flamespray",
     "type": "SPELL",
     "name": "Flamespray",
     "description": "This is a template to show off all the available values",
@@ -155,7 +155,7 @@
     "max_field_intensity": 1
   },
   {
-    "id": "flameray",
+    "id": "mu_spell_flameray",
     "type": "SPELL",
     "name": "Flameray",
     "description": "This is a template to show off all the available values",
@@ -190,7 +190,7 @@
     "max_field_intensity": 1
   },
   {
-    "id": "flamebolt",
+    "id": "mu_spell_flamebolt",
     "type": "SPELL",
     "name": "Flamesbolt",
     "description": "This is a template to show off all the available values",
@@ -221,7 +221,7 @@
     "max_field_intensity": 1
   },
   {
-    "id": "flamestrike",
+    "id": "mu_spell_flamestrike",
     "type": "SPELL",
     "name": "Flamestrike",
     "description": "This is a template to show off all the available values",
@@ -257,7 +257,7 @@
     "field_intensity_variance": 0.5
   },
   {
-    "id": "frozen_grasp",
+    "id": "mu_spell_frozen_grasp",
     "type": "SPELL",
     "name": "Frozen Grasp",
     "description": "This quick spell slams a target that you touch with intense cold that probably freezes them solid.  At high levels it can reach a short distance.",
@@ -308,7 +308,7 @@
     }
   },
   {
-    "id": "chill",
+    "id": "mu_spell_chill",
     "type": "SPELL",
     "name": "Chill",
     "description": "This spell rapidly and dramatically lowers the temperature in an area to the point that it does considerable damage.",
@@ -348,14 +348,13 @@
     "field_intensity_variance": 0.1
   },
   {
-    "id": "phase",
+    "id": "mu_spell_phasedoor",
 	"type": "SPELL",
 	"name": "Phase Door",
 	"description": "This is a template to show off all the available values",
 	"message": "you cast %s",
 	"valid_targets": [ "self" ],
 	"effect": "teleport_random",
-	"learn_spells": { "blink": 5, "teleport": 10 },
 	"flags": [ "VERBAL", "SOMATIC", "NO_HANDS", "NO_LEGS", "NO_FAIL" ],
 	"spell_class": "MAGE",
 	"energy_source": "MANA",
@@ -379,7 +378,7 @@
 	"range_increment": 2
   },
   {
-    "id": "mage_blinker_spell",
+    "id": "mu_spell_blinker_spell",
 	"type": "SPELL",
 	"name": "blinker",
 	"description": "This is a template to show off all the available values",
@@ -412,14 +411,14 @@
           "has": "WORN",
           "condition": "ALWAYS",
           "intermittent_activation": {
-            "effects": [ { "frequency": "6 seconds", "spell_effects": [ { "id": "mage_blinker_spell" } ] } ]
+            "effects": [ { "frequency": "6 seconds", "spell_effects": [ { "id": "mu_spell_blinker_spell" } ] } ]
           }
         }
       ]
     }
   },
   {
-    "id": "mage_blink",
+    "id": "mu_spell_blink",
 	"type": "SPELL",
 	"name": "Blink",
 	"description": "This is a template to show off all the available values",
@@ -445,7 +444,7 @@
 	"duration_increment": 250
   },
   {
-    "id": "mirroring",
+    "id": "mu_spell_mirroring",
 	"type": "SPELL",
 	"name": "Mirroring",
 	"//": "fix this to create customized images later, ones with med dodge and 1hp",
@@ -496,7 +495,7 @@
     }
   },
   {
-    "id": "shield",
+    "id": "mu_spell_shield",
 	"type": "SPELL",
 	"name": "Shield",
 	"description": "This is a template to show off all the available values",
@@ -578,7 +577,7 @@
 	"relic_data": { "passive_effects": [ { "mutations": [ "FLEET", "PARKOUR" ] } ] }
   },
   {
-    "id": "mu_quicken_step",
+    "id": "mu_spell_quicken_step",
 	"type": "SPELL",
 	"name": "Quicken Step",
 	"description": "This is a template to show off all the available values",
@@ -602,5 +601,35 @@
 	"min_duration": 60000,
 	"max_duration": 120000,
 	"duration_increment": 10000
+  },
+  {
+    "id": "mu_spell_web",
+	"type": "SPELL",
+	"name": "Web",
+	"description": "This spell creates a wide cone of webbing to hinder and trap those caught in its effects.",
+	"valid_targets": [ "hostile", "ground", "ally" ],
+	"effect": "cone_attack",
+	"effect_str": "webbed",
+	"spell_class": "MAGE",
+	"flags": [ "VERBAL", "SOMATIC", "NO_HANDS", "NO_LEGS", "NO_FAIL" ],
+	"energy_source": "MANA",
+	"difficulty": 2,
+	"base_casting_time": 150,
+	"base_energy_cost": 200,
+	"max_level": 20,
+	"min_aoe": 35,
+	"max_aoe": 90,
+	"aoe_increment": 3,
+	"min_range": 4,
+	"max_range": 10,
+	"range_increment": 0.25,
+	"min_duration": 500,
+	"max_duration": 2000,
+	"duration_increment": 100,
+	"field_id": "fd_web",
+	"field_chance": 1,
+	"min_field_intensity": 1,
+	"max_field_intensity": 3,
+	"field_intensity_increment": 0.20
   }
 ]
