@@ -4,7 +4,7 @@
     "id": "MAGE",
     "name": "Mage",
     "points": 0,
-    "description": "You have learned how to access mana and cast at least one hermetic magic spell.  You're a mage, Gary!",
+    "description": "You have learned how to access mana and cast at least one hermetic magic spell.",
     "starting_trait": false,
     "purifiable": false,
     "valid": false

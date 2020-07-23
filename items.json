@@ -1,0 +1,35 @@
+[
+  {
+    "type": "tool_quality",
+    "id": "MAGE_M",
+    "name": "Mage"
+  },
+  {
+    "id": "mage_marker",
+    "type": "TOOL_ARMOR",
+    "symbol": "*",
+    "color": "red",
+    "name": "Mage Marker",
+    "description": "This is a placeholder object to determine what class you are for crafting purposes.  You can't drop it.",
+    "volume": "1 ml",
+    "qualities": [ [ "MAGE_M", 1 ] ],
+    "flags": [ "PERSONAL", "TRADER_AVOID", "NO_SALVAGE", "PSEUDO", "NO_TAKEOFF", "NO_REPAIR" ]
+  },
+  {
+    "id": "wm_magelight_item",
+    "type": "TOOL_ARMOR",
+    "category": "tools",
+    "name": "magelight",
+    "description": "A small manifestation of magical power, it is a sphere of force that compresses and agitates air molecules within it with magical power, thereby creating light.  It will hover above your head, or you can also throw it.",
+	"weight": "1 g",
+    "volume": "1 ml",
+    "price": 0,
+	"bashing": 0,
+    "symbol": "*",
+    "color": "light_green",
+    "covers": [ "HEAD" ],
+    "flags": [ "LIGHT_20", "AURA", "SEMITANGIBLE" ]
+  }
+  
+  
+]
