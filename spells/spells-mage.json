@@ -522,5 +522,87 @@
 	"min_duration": 6000,
 	"max_duration": 12000,
 	"duration_increment": 1000
+  },
+  {
+    "type": "ARMOR",
+    "id": "phantasmal_armor",
+    "name": { "str": "phantasmal armor" },
+	"symbol": "O",
+	"color": "white",
+    "volume": "1 ml",
+    "description": "A nearly invisible phantasmal suit of armor covering you, protecting you from harm.",
+    "flags": [ "AURA", "STURDY" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_CUT", "add": -6 }, { "value": "ARMOR_BASH", "add": -6 }, { "value": "ARMOR_STAB", "add": -6 }, { "value": "ARMOR_BULLET", "add": -6 } ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "mu_spell_armor",
+	"type": "SPELL",
+	"name": "Mage Armor",
+	"description": "This is a template to show off all the available values",
+	"message": "you cast %s",
+	"valid_targets": [ "self" ],
+	"effect": "spawn_item",
+	"effect_str": "phantasmal_armor",
+	"flags": [ "VERBAL", "SOMATIC", "NO_HANDS", "NO_LEGS", "NO_FAIL" ],
+	"spell_class": "MAGE",
+	"energy_source": "MANA",
+	"difficulty": 1,
+	"max_level": 10,
+	"base_casting_time": 100,
+	"casting_time_increment": -1,
+    "final_casting_time": 80,
+	"base_energy_cost": 100,
+	"energy_increment": -1,
+    "final_energy_cost": 80,
+	"min_damage": 1,
+	"max_damage": 1,
+	"min_duration": 60000,
+	"max_duration": 120000,
+	"duration_increment": 10000
+  },
+  {
+    "id": "mu_quicken_step_token",
+    "type": "TOOL_ARMOR",
+    "symbol": "*",
+    "color": "red",
+    "name": "Mage quicken step token",
+    "description": "This is a placeholder object to determine what class you are for crafting purposes.  You can't drop it.",
+    "volume": "1 ml",
+    "flags": [ "AURA", "TRADER_AVOID", "NO_SALVAGE", "PSEUDO", "NO_REPAIR" ],
+	"relic_data": { "passive_effects": [ { "mutations": [ "FLEET", "PARKOUR" ] } ] }
+  },
+  {
+    "id": "mu_quicken_step",
+	"type": "SPELL",
+	"name": "Quicken Step",
+	"description": "This is a template to show off all the available values",
+	"message": "you cast %s",
+	"valid_targets": [ "self"],
+	"effect": "spawn_item",
+	"effect_str": "mu_quicken_step_token",
+	"flags": [ "VERBAL", "SOMATIC", "NO_HANDS", "NO_LEGS", "NO_FAIL" ],
+	"spell_class": "MAGE",
+	"energy_source": "MANA",
+	"difficulty": 1,
+	"max_level": 10,
+	"base_casting_time": 100,
+	"casting_time_increment": -1,
+    "final_casting_time": 80,
+	"base_energy_cost": 100,
+	"energy_increment": -1,
+    "final_energy_cost": 80,
+	"min_damage": 1,
+	"max_damage": 1,
+	"min_duration": 60000,
+	"max_duration": 120000,
+	"duration_increment": 10000
   }
 ]
