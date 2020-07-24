@@ -11,6 +11,45 @@
     "color": "blue"
   },
   {
+    "id": "mu_master_spellbook",
+    "type": "BOOK",
+    "name": { "str": "Master Spellbook", "str_pl": "copies of Master Spellbook" },
+    "description": "The Master Spellbook, containing all known spells.",
+    "weight": "800 g",
+    "volume": "2 L",
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "red",
+    "use_action": {
+      "type": "learn_spell",
+      "spells": [
+        "mu_spell_cantrip",
+        "mu_spell_magic_missile_1",
+        "mu_spell_flamespray",
+        "mu_spell_flameray",
+        "mu_spell_flamebolt",
+        "mu_spell_flamestrike",
+        "mu_spell_frozen_grasp",
+        "mu_spell_chill",
+        "mu_spell_phasedoor",
+        "mu_spell_blink",
+        "mu_spell_mirroring",
+        "mu_spell_shield",
+        "mu_spell_armor",
+        "mu_spell_quicken_step",
+        "mu_spell_web",
+        "mu_spell_color_spray",
+        "mu_spell_nightsight",
+        "mu_spell_light",
+        "mu_spell_darkness",
+		"mu_spell_hold",
+		"mu_spell_charm",
+		"mu_spell_shatter",
+		"mu_spell_acidic_bolt"
+      ]
+    }
+  },
+  {
     "type": "BOOK",
     "copy-from": "mu_scroll",
     "id": "mu_scroll_cantrip",
@@ -180,5 +219,41 @@
     "name": { "str": "scroll of darkness", "str_pl": "scrolls of darkness" },
     "description": "A compact, rolled up scroll, labeled darkness",
     "use_action": { "type": "learn_spell", "spells": [ "mu_spell_darkness" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "mu_scroll",
+    "id": "mu_scroll_hold",
+    "//": " ",
+    "name": { "str": "scroll of hold", "str_pl": "scrolls of hold" },
+    "description": "A compact, rolled up scroll, labeled hold",
+    "use_action": { "type": "learn_spell", "spells": [ "mu_spell_hold" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "mu_scroll",
+    "id": "mu_scroll_charm",
+    "//": " ",
+    "name": { "str": "scroll of charm", "str_pl": "scrolls of charm" },
+    "description": "A compact, rolled up scroll, labeled charm",
+    "use_action": { "type": "learn_spell", "spells": [ "mu_spell_charm" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "mu_scroll",
+    "id": "mu_scroll_shatter",
+    "//": " ",
+    "name": { "str": "scroll of shatter", "str_pl": "scrolls of shatter" },
+    "description": "A compact, rolled up scroll, labeled shatter",
+    "use_action": { "type": "learn_spell", "spells": [ "mu_spell_shatter" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "mu_scroll",
+    "id": "mu_scroll_acidic_bolt",
+    "//": " ",
+    "name": { "str": "scroll of acidic bolt", "str_pl": "scrolls of acidic bolt" },
+    "description": "A compact, rolled up scroll, labeled acidic bolt",
+    "use_action": { "type": "learn_spell", "spells": [ "mu_spell_acidic_bolt" ] }
   }
 ]

@@ -10,7 +10,7 @@
 	"spells": [ { "id": "mu_spell_cantrip", "level": 1 }, { "id": "mu_spell_magic_missile_1", "level": 1 }, { "id": "mu_spell_light", "level": 1 } ],
     "items": {
       "both": {
-        "items": [ "jeans", "tshirt", "hoodie", "socks", "pockknife", "mbag", "sneakers", "wristwatch", "mage_marker" ],
+        "items": [ "jeans", "tshirt", "hoodie", "socks", "pockknife", "mbag", "sneakers", "wristwatch", "mage_marker", "mu_master_spellbook" ],
         "entries": [ { "group": "charged_cell_phone" } ]
       },
       "male": [ "briefs" ],
