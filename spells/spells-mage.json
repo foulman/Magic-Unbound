@@ -54,7 +54,7 @@
 	"message": "you cast %s, sending slender invisible bolt of force puncturing into your enemy!",
 	"valid_targets": [ "hostile", "ground", "ally" ],
 	"effect": "projectile_attack",
-	"extra_effects": [ { "id": "magic_missile_sub" } ],
+	"extra_effects": [ { "id": "mu_spell_magic_missile_sub" } ],
 	"flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "WONDER", "NO_FAIL" ],
 	"spell_class": "MAGE",
 	"energy_source": "MANA",
