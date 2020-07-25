@@ -45,7 +45,10 @@
 		"mu_spell_hold",
 		"mu_spell_charm",
 		"mu_spell_shatter",
-		"mu_spell_acidic_bolt"
+		"mu_spell_acidic_bolt",
+		"mu_spell_grease",
+		"mu_spell_blur",
+		"mu_spell_flaming_sphere"
       ]
     }
   },
