@@ -87,5 +87,27 @@
     "valid": false,
     "mana_regen_multiplier": 1.0,
 	"mana_multiplier": 1.0
+  },
+  {
+    "type": "mutation",
+    "id": "RUNE",
+    "name": "Rune user",
+    "points": 0,
+    "description": "You have bound yourself to the lifeforce of the earth and nature and can draw magic power from it to cast spells.",
+    "starting_trait": false,
+    "purifiable": false,
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "RUNEW_NOVICE",
+    "name": "Novice Runewarrior",
+    "points": 1,
+    "description": "A novice runewarrior.  You can cast a few spells.",
+    "starting_trait": false,
+    "purifiable": false,
+    "valid": false,
+    "mana_regen_multiplier": 1.0,
+	"mana_multiplier": 1.0
   }
 ]
