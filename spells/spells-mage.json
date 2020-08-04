@@ -1114,6 +1114,80 @@
     "max_field_intensity": 1,
     "field_intensity_increment": 0.25,
     "field_intensity_variance": 0.5
+  },
+  {
+    "type": "mutation",
+    "id": "ENLARGE_HUGE",
+    "name": { "str": "Enlarged" },
+    "points": 2,
+    "visibility": 4,
+    "ugliness": 3,
+    "mixed_effect": true,
+    "description": "Your cardiovascular system has caught up with your muscular physique, so who needs pathetic human cars?  Strength +4.",
+    "passive_mods": { "str_mod": 4 },
+    "restricts_gear": [ "torso", "leg_l", "leg_r", "arm_l", "arm_r", "hand_l", "hand_r", "head", "foot_l", "foot_r" ],
+    "destroys_gear": true,
+    "weight_capacity_modifier": 1.1
+  },
+  {
+    "id": "mu_spell_item_enlarge",
+    "type": "ARMOR",
+    "description": "You wear it.",
+    "volume": "1 ml",
+    "symbol": "*",
+    "color": "light_gray",
+    "name": { "str": "enlarge", "str_pl": "enlarge" },
+    "relic_data": {
+      "passive_effects": [
+        { "has": "WORN", "condition": "ALWAYS", "mutations": [ "ENLARGE_HUGE" ] }
+      ]
+    },
+	"flags": [ "TRADER_AVOID", "AURA", "NO_SALVAGE" ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "elemental_armor",
+    "name": { "str": "elemental armor" },
+	"symbol": "O",
+	"color": "white",
+    "volume": "1 ml",
+    "description": "A nearly invisible suit of armor covering you, protecting you from elemental harm.",
+    "flags": [ "AURA", "STURDY" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_COLD", "add": -6 }, { "value": "ARMOR_ELEC", "add": -6 }, { "value": "ARMOR_ACID", "add": -6 }, { "value": "ARMOR_HEAT", "add": -6 } ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "mu_spell_armor",
+	"type": "SPELL",
+	"name": "Elemenatal Armor",
+	"description": "This is a template to show off all the available values",
+	"message": "you cast %s",
+	"valid_targets": [ "self" ],
+	"effect": "spawn_item",
+	"effect_str": "elemental_armor",
+	"flags": [ "VERBAL", "SOMATIC", "NO_HANDS", "NO_LEGS", "NO_FAIL" ],
+	"spell_class": "MAGE",
+	"energy_source": "MANA",
+	"difficulty": 1,
+	"max_level": 10,
+	"base_casting_time": 100,
+	"casting_time_increment": -1,
+    "final_casting_time": 80,
+	"base_energy_cost": 100,
+	"energy_increment": -1,
+    "final_energy_cost": 80,
+	"min_damage": 1,
+	"max_damage": 1,
+	"min_duration": 60000,
+	"max_duration": 120000,
+	"duration_increment": 10000
   }
   
 ]
