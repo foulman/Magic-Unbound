@@ -7,7 +7,30 @@
     "description": "You have learned how to access mana and cast at least one hermetic magic spell.",
     "starting_trait": false,
     "purifiable": false,
-    "valid": false
+    "valid": false,
+	"cancels": [ "CLERIC", "DRUID" ]
+  },
+  {
+    "type": "mutation",
+    "id": "CLERIC",
+    "name": "Cleric",
+    "points": 0,
+    "description": "You have bound yourself to a benevolent deity and draw power from it.",
+    "starting_trait": false,
+    "purifiable": false,
+    "valid": false,
+	"cancels": [ "MAGE", "DRUID" ]
+  },
+  {
+    "type": "mutation",
+    "id": "DRUID",
+    "name": "Druid",
+    "points": 0,
+    "description": "You have bound yourself to the spirit and power of the earth's nature itself and draw power from it.",
+    "starting_trait": false,
+    "purifiable": false,
+    "valid": false,
+	"cancels": [ "MAGE", "CLERIC" ]
   },
   {
     "type": "mutation",
@@ -18,8 +41,8 @@
     "starting_trait": false,
     "purifiable": false,
     "valid": false,
-    "mana_regen_multiplier": 1.1,
-	"mana_multiplier": 1.10
+    "mana_regen_multiplier": 1.0,
+	"mana_multiplier": 1.0
   },
   {
     "type": "mutation",
