@@ -59,8 +59,8 @@
     "name": "Novice Druid",
     "description": "You have entered the service of nature and draw power from nature itself, allowing you to cast spells.",
     "points": 1,
-    "traits": [ "DRUID", "DRUID_NOVICE" ],
-    "skills": [ { "level": 1, "name": "spellcraft" } ],
+    "traits": [ "DRUID", "DRUID_NOVICE", "ANIMALEMPATH2" ],
+    "skills": [ { "level": 1, "name": "spellcraft" }, { "level": 3, "name": "survival" } ],
 	"spells": [ { "id": "mu_spell_bless", "level": 1 }, { "id": "mu_spell_cleric_light", "level": 1 }, { "id": "mu_spell_cleric_hold", "level": 1 } ],
     "items": {
       "both": {
